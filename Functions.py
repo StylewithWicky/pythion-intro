@@ -32,3 +32,5 @@ students =[
 for name, score in students:
     grade=assign_grades(score)
     print(f"{name} : {score} => Grade = {grade}")
+
+
