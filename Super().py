@@ -52,9 +52,11 @@ class Teacher(Employee):
     def __init__(self, name, id,subject):
         super().__init__(name, id)
         self.subject =subject
+    
     def display_info(self):
         super().display_info()
         print(f"Subject : {self.subject}")
+    
     def calculate_salary(self):
         base =super().calculate_salary()
         return base +3000
