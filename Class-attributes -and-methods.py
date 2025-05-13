@@ -35,7 +35,24 @@ Books.change_library_name("National Library")
 library1 =Books("The Alchemist","Maitai")
 print(library1.Vitabu())
 
+class Restaurant:
+    restaurant_place="Mama's Kitchen"
 
+    def __init__(self,dish,prices):
+         self.dish=dish
+         self.prices=prices
+
+
+    @classmethod
+    def change_restaurant_name(cls ,new_name):
+        cls.restaurant_place =new_name
+
+    def show_menu(self):
+         return f"{self.restaurant_place} has good food and they charge {self.prices} for {self.dish} "
+    
+Restaurant.change_restaurant_name("Papa Joe's")
+restaurant=Restaurant("Mchele", 350)
+print(restaurant.show_menu())
      
           
             
