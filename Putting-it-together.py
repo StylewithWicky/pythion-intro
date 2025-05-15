@@ -1,4 +1,5 @@
 import re
+#Hii naeka ndio niokoe streek
 
 class User :
     all_user=[]
@@ -13,3 +14,5 @@ class User :
         self.role="User"
         User.user_count=+1
         User.all_user.append(self)
+    def display(self):
+        return f"{self.role} | Name:{self.name} | Email :{self.email}"
